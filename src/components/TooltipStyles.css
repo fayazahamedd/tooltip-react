@@ -1,0 +1,22 @@
+/* TooltipStyles.css */
+.custom-button {
+    position: relative;
+  }
+  
+  .custom-button .MuiTooltip-tooltip {
+    background-color: black;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust the distance from the button */
+    transform: translate(0, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .custom-button:hover .MuiTooltip-tooltip {
+    opacity: 1;
+  }
+  
